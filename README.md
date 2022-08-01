@@ -1,1 +1,35 @@
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/101866-07f61b03-5a3e-4278-bb04-37037445a24e?action=collection%2Ffork&collection-url=entityId%3D101866-07f61b03-5a3e-4278-bb04-37037445a24e%26entityType%3Dcollection%26workspaceId%3D16048d81-dc6a-43d0-9058-1bca1322e455)
+# Potions Mart
+
+> API Rest Potions Market, with Laravel 9 and mysql
+
+
+
+### Getting started
+
+Run migrations and fill database with seed data.
+```
+$ php artisan migrate:fresh --seed
+``` 
+
+
+
+
+### Principal Routes
+```
+  POST       api/buy ........................... Api\ClientController@buy
+  GET|HEAD   api/clients ..................... Api\ClientController@index
+  POST       api/login ......................... Api\AuthController@login
+  GET|HEAD   api/potions ..................... Api\PotionController@index
+  GET|HEAD   api/user ........................... Api\AuthController@user
+  POST       api/register ................... Api\AuthController@register
+```
+
+###### Routes on Postman
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/irricrops/workspace/public-workspace/request/101866-da577021-6150-4b55-8c7e-8e5fcbf15c85) 
+
+
+
+### DatabaseModel
+![Database Model](https://raw.githubusercontent.com/brujo-rojas/potionsmart/master/potionsDB.png)
+
+
